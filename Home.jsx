@@ -50,7 +50,7 @@ function Home({isAuth}) {
 
         <div className='postTextContainer'>
           {post.postText}
-          <h3>@{post.author.name}</h3>
+          {post ? <h3>@{post.author.name}</h3> : <h3>Null User</h3>}
         </div>
         </div>
       })}
